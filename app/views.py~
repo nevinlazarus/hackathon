@@ -1,0 +1,6 @@
+from app import app
+
+@app.route("/") #route decorators to create mappings from urls to this function
+@app.route("/index")
+def index():
+    return "hello world!"
